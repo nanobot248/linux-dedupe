@@ -1,0 +1,29 @@
+{
+  "name": "@nanobot248/linux-dedupe",
+  "version": "0.1.0",
+  "description": "Provides wrapper methods for FIDEDUPERANGE ioctl on linux, allowing to deduplicate file ranges.",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "npm run clean && ./node_modules/typescript/bin/tsc -p ./tsconfig.build.json",
+    "watch": "./node_modules/typescript/bin/tsc -w -p ./tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "linux",
+    "ioctl",
+    "FICLONERANGE",
+    "FIDEDUPERANGE",
+    "VFS"
+  ],
+  "author": "Andreas Hubert <nanobot248@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.20",
+    "bindings": "^1.5.0",
+    "nan": "^2.14.2",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}
